@@ -203,7 +203,7 @@ header {
   background-color: rgba(12,12,12, .7);
 
   // display: none;
-  // z-index: 1;
+  z-index: 2;
 }
 .drawer {
   box-sizing: border-box;
@@ -221,8 +221,23 @@ header {
 
   z-index: 3;
 
+  .drawerHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .roundButton {
+      border: none;
+      // img {
+      //   width: 50px;
+      // }
+    }
+  }
+
   .items {
     flex: 1;
+    overflow: auto;
+    margin-bottom: 40px;
   }
 
   .cartTotalContainer {
